@@ -1,0 +1,2 @@
+jaager.yaml: Yaml code to create a jeager instance in observability namespace named "my-traces" from an all-in-one image.
+injector-enable.yaml: Allow jeager instance to inject and monitor traces from applications whose pods are deployment in "default" namespace. (i.e.enabling cross namespace injecting)
