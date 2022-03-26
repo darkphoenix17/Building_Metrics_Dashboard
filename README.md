@@ -58,5 +58,8 @@ Here we have to ssh into the vagrant box to write kubectl command but we can abs
 ```$ vagrant ssh``` \
 ```$ kubectl port-forward -n ${namespace} --address 0.0.0.0 svc/$(kubectl get svc -n ${namespace} -l app=jaeger -o jsonpath={.items[2].metadata.name}) 16686:16686``` 
 
-3) You can now see the Jaeger UI.
+3) You can now see the Jaeger UI at ```"http:localhost:16686"``` in your local browser.
+
+*** 
+
 
