@@ -50,6 +50,16 @@ Here we have to ssh into the vagrant box to write kubectl command but we can abs
 
 ***
 
+## Create Jaeger Instance
+
+In order to use Jaeger we have to create a Jaeger Instance. Follow the steps below.<br />
+
+```$ kubectl apply -f jaeger-tracing/jaeger.yaml``` <br />
+*(We have to enable sidecar injector for our instance located in a particular namespace to allow jeager instance to check for traces in application in a different namespace.)*<br />
+```$ kubectl apply -f jaeger-tracing/injector-enable.yaml```
+
+***
+
 ## Steps to expose Jaeger UI
 
 1) Check the namespace where your jaeger instance is been created. let it be ```${namespace}```
