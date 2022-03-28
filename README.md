@@ -92,6 +92,12 @@ In order to use Jaeger we have to create a Jaeger Instance. Follow the steps bel
 
 ***
 
+## Open/Create a dashboard
+
+Now that Grafana is up and Tracing is enabled and prometheus is set as one of the data source. We can create a dashboard to metrics over observation.
+I have already created a dashboard and have exported/saved it's corresponing json file in ```dashboards/dashboard.json```. One can upload this json back to grafana to see the metrices dashboard.
+
+
 
 # Below are the images showing outputs.
 
